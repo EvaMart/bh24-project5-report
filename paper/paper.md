@@ -89,7 +89,7 @@ authors:
     affiliation: 13
     orcid: 0000-0002-7753-9042
 
-  - name: Marcus Palmblad
+  - name: Magnus Palmblad
 
     affiliation: 12
     orcid: 0000-0002-5865-8994
