@@ -100,7 +100,7 @@ authors_short: Eva Martin del Pico \emph{et al.}
 
 Research software plays a vital role in modern scientific work, and assessing its quality is essential for reproducibility, sustainability, and trust. The goal of this project was to create a curated, non-redundant set of indicators that are relevant, feasible to implement, and applicable to the assessment of research software best practices.
 
-Specifically, we aimed to:
+Specifically, we aimed to: 
 - Gather indicators from established resources.
 - Remove indicators that are out of scope, overly philosophical, or redundant.
 - Assign supergroups and tags to support practical use.
@@ -119,7 +119,8 @@ This resource is intended for:
 
 ### 2.1 Sources Included
 
-We reviewed indicators from a variety of authoritative sources:
+We reviewed indicators from a variety of authoritative sources: 
+
 - [EOSC Task Force 3](https://zenodo.org/records/10647227)
 - [FLOSS Best Practices Criteria](https://www.bestpractices.dev/en/criteria/0)
 - [RSMD Guidelines](https://fair-impact.github.io/RSMD-guidelines/)
@@ -130,7 +131,8 @@ We reviewed indicators from a variety of authoritative sources:
 
 ### 2.2 Sources Excluded
 
-Several sources were not included due to either duplication, minimal added value, or being overly narrow:
+Several sources were not included due to either duplication, minimal added value, or being overly narrow: 
+
 - STEERS scoreboard
 - Software Citation Workshop 2022 indicators
 - Reproducible builds (focused on a single criterion)
@@ -190,12 +192,6 @@ Each indicator entry includes:
 - No prioritization or scoring is offered — left to downstream users.
 - Green computing indicators (e.g., energy efficiency) are not included.
 
-## 5. Future Work
-
-- Merge overlapping supergroups or unify tags and dimensions.
-- Recombine all indicators into a single sheet for further redundancy detection.
-- Link the indicators to tools or automation frameworks (where possible).
-- Explore use-case specific adaptations (e.g., for FAIRness, security, or sustainability audits).
 
 ## 6. Acknowledgments
 
