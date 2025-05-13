@@ -271,30 +271,11 @@ The outcome is a structured spreadsheet available at [Zenodo DOI: 10.5281/zenodo
 An excerpt of the spreadsheet is shown in **Figure 1**, illustrating how indicators in the  *Community* supergroup are categorized and annotated with target, implementation feasibility, and action status.
 
 ![Example of curated indicators in the ‘Community’ supergroup, showing classification across data sources, targets, implementation feasibility, and actions.](./figure1.png) 
-{\small *Figure 1. Example of curated indicators in the ‘Community’ supergroup, with classification across targets, feasibility, and actions.*} 
+**Figure 1**. Example of curated indicators in the ‘Community’ supergroup, with classification across targets, feasibility, and actions.
 
 ### Supergroups
 
-To structure the catalogue, indicators were grouped into a set of thematic supergroups. These were defined based on expert intuition and discussions during the BioHackathon, reflecting key dimensions of research software quality. The full list of supergroups includes:
-
-- Accessibility  
-- Community  
-- Contribution  
-- Documentation  
-- Findability  
-- Fundability  
-- Interoperability  
-- Issue Tracking  
-- Licensing  
-- Monitoring  
-- Security  
-- Source code  
-- Sustainability  
-- Testing  
-- Usability  
-- Versioning
-
-Indicators that lacked sufficient description or did not clearly apply to research software were excluded prior to grouping and labeled as "X – uncategorised". These excluded indicators were still reviewed and documented for transparency but are not part of the final structured set.
+To structure the catalogue, indicators were grouped into a set of thematic supergroups. These were defined based on expert intuition and discussions during the BioHackathon, reflecting key dimensions of research software quality. Examples of supergroups include Documentation, Security, Usability, Sustainability, and Licensing. A small number of indicators that lacked sufficient description or were not clearly applicable to research software were excluded and labeled as "uncategorised."
 
 ### Indicator Structure
 
