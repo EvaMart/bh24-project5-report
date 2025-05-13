@@ -1,114 +1,205 @@
 ---
-title: 'BioHackEU23 report: Template for the very long title'
-title_short: 'BioHackEU23 #26: unknown chemical substances'
+title: 'BioHackEU25 report: Curating Software Quality Indicators for Research Software'
+title_short: 'BioHackEU25: Software Quality Indicators'
 tags:
-  - cheminformatics
-  - PubChem
-  - unknown chemical substances
+  - research software
+  - software quality
+  - software assessment
 authors:
-  - name: First Author
+  - name: Eva Martin del Pico
     affiliation: 1
-  - name: Last Author
-    orcid: 0000-0000-0000-0000
+    orcid: 0000-0001-8324-2897
+  - name: Fotis Psomopoulos
     affiliation: 2
+    orcid: 0000-0002-0222-4273
+  - name: Laura Portell Silva
+    affiliation: 1
+    orcid: 0000-0003-0390-3208
+  - name: Renato Alves
+    affiliation: 3
+    orcid: 0000-0002-7212-0234
+  - name: Sébastien Moretti
+    affiliation: 4
+    orcid: 0000-0003-3947-488X
+  - name: Shoaib Sufi
+    affiliation: 5
+    orcid: 0000-0001-6390-2616
+  - name: Adel Kamel Eddine Bouhraoua
+    affiliation: 6
+    orcid: 000-0001-9531-6339
+  - name: David Steinberg
+    affiliation: 7
+    orcid: 0000-0001-6683-2270
+  - name: Gavin Farrell
+    affiliation: 8
+    orcid: 0000-0001-5166-8551
+  - name: Maria Tsontaki
+    affiliation: 9
+    orcid: 0009-0003-8414-6241
+  - name: Rafael Andrade Buono
+    affiliation: 9
+    orcid: 0000-0002-6675-3836
+  - name: Sebastian Beier
+    affiliation: 10
+    orcid: 0000-0002-2177-8781
+  - name: Daniel Garijo
+    affiliation: 11
+    orcid: 0000-0003-0454-7145
+  - name: José María Fernández
+    affiliation: 1
+    orcid: 0000-0002-4806-5140
+  - name: Mariia Steeghs-Turchina
+    affiliation: 12
+    orcid: 0000-0002-0852-4752
+  - name: Mihail Anton
+    affiliation: 13
+    orcid: 0000-0002-7753-9042
+  - name: Marcus Palmblad
+    affiliation: 12
+    orcid: 0000-0002-5865-8994
 affiliations:
-  - name: First Affiliation
+  - name: Barcelona Supercomputing Center
     index: 1
-  - name: Second Affiliation
+  - name: Aristotle University of Thessaloniki
     index: 2
-date: 8 November 2023
+  - name: European Molecular Biology Laboratory (EMBL)
+    index: 3
+  - name: SIB Swiss Institute of Bioinformatics
+    index: 4
+  - name: University of Manchester
+    index: 5
+  - name: University of Padova
+    index: 6
+  - name: University of California, Santa Cruz
+    index: 7
+  - name: European Bioinformatics Institute
+    index: 8
+  - name: Vlaams Instituut voor Biotechnologie
+    index: 9
+  - name: Forschungszentrum Jülich
+    index: 10
+  - name: Universidad Politécnica de Madrid
+    index: 11
+  - name: Leiden University Medical Center (LUMC)
+    index: 12
+  - name: ELIXIR Hub, Chalmers University of Technology
+    index: 13
+date: 13 May 2025
 cito-bibliography: paper.bib
-event: BH23EU
-biohackathon_name: "BioHackathon Europe 2023"
+event: BH25EU
+biohackathon_name: "BioHackathon Europe 2025"
 biohackathon_url:   "https://biohackathon-europe.org/"
-biohackathon_location: "Barcelona, Spain, 2023"
-group: Project 26
-# URL to project git repo --- should contain the actual paper.md:
-git_url: https://github.com/biohackrxiv/publication-template
-# This is the short authors description that is used at the
-# bottom of the generated paper (typically the first two authors):
-authors_short: First Author \emph{et al.}
+biohackathon_location: "Barcelona, Spain, 2025"
+group: Project 5
+git_url: https://github.com/EvaMart/bh24-project5-report/tree/main
+authors_short: Eva Martin del Pico \emph{et al.}
 ---
+# Curating Software Quality Indicators for Research Software
 
+## 1. Introduction
 
-# Introduction
+Research software plays a vital role in modern scientific work, and assessing its quality is essential for reproducibility, sustainability, and trust. The goal of this project was to create a curated, non-redundant set of indicators that are relevant, feasible to implement, and applicable to the assessment of research software best practices.
 
-As part of the BioHackathon Europe 2023, we here report...
+Specifically, we aimed to:
+- Gather indicators from established resources.
+- Remove indicators that are out of scope, overly philosophical, or redundant.
+- Assign supergroups and tags to support practical use.
+- Produce a usable spreadsheet of indicators annotated with implementation guidance and decisions.
 
-# Formatting
+The final outcome is a structured dataset of quality indicators, accompanied by documentation of decision criteria and rationale. While the list does not include prioritization or ranking, it can be adapted for specific use cases. Future users may wish to introduce weighting schemes based on context.
 
-This document use Markdown and you can look at [this tutorial](https://www.markdowntutorial.com/).
+### Expected Users
 
-## Subsection level 2
+This resource is intended for:
+- Research software developers and maintainers.
+- Funders and evaluators (e.g., EVERSE WP3, RSQKit, STEERS).
+- Anyone seeking to assess research software against quality best practices.
 
-Please keep sections to a maximum of only two levels.
+## 2. Method
 
-## Tables and figures
+### 2.1 Sources Included
 
-Tables can be added in the following way, though alternatives are possible:
+We reviewed indicators from a variety of authoritative sources:
+- [EOSC Task Force 3](https://zenodo.org/records/10647227)
+- [FLOSS Best Practices Criteria](https://www.bestpractices.dev/en/criteria/0)
+- [RSMD Guidelines](https://fair-impact.github.io/RSMD-guidelines/)
+- [FAIR IMPACT D5.2 – Metrics for Automated FAIR Software Assessment](https://doi.org/10.5281/zenodo.10047401)
+- [Helmholtz Quality Indicator](https://github.com/EVERSE-ResearchSoftware/RSQuality_indicators/issues/5)
+- [ISO/IEC 25010](https://iso25000.com/index.php/en/iso-25000-standards/iso-25010)
+- [SWEBOK v4 – Chapter 12: Software Quality](https://ieeecs-media.computer.org/media/education/swebok/swebok-v4.pdf)
 
-Table: Note that table caption is automatically numbered and should be
-given before the table itself.
+### 2.2 Sources Excluded
 
-| Header 1 | Header 2 |
-| -------- | -------- |
-| item 1 | item 2 |
-| item 3 | item 4 |
+Several sources were not included due to either duplication, minimal added value, or being overly narrow:
+- STEERS scoreboard
+- Software Citation Workshop 2022 indicators
+- Reproducible builds (focused on a single criterion)
+- Bioinformatics SE practices (descriptive rather than indicator-focused)
 
-A figure is added with:
+### 2.3 Workflow
 
-![Caption for BioHackrXiv logo figure](./biohackrxiv.png)
+The work was initiated at BioHackathon 2025 (Project 5) and refined through a collaborative review process:
 
-# Other main section on your manuscript level 1
+1. **Collection**: Over 300 indicators were collected from selected sources.
+2. **Grouping**: Indicators were assigned to thematic "supergroups" (e.g., Documentation, Security, Sustainability).
+3. **Assessment**:
+   - **Target**: Classified as relevant to software, services, governance, or architecture/design.
+   - **Implementation Feasibility**: Rated based on whether a person (not a machine) could feasibly assess the indicator. This did not judge how well the indicator was being met, only whether it could be reasonably evaluated.
+4. **Action Decisions**:
+   - **Keep**: Retain as relevant and feasible.
+   - **Maybe**: Ambiguous or dependent on context.
+   - **Discard**: Redundant, vague, or philosophical (e.g., "immutable infrastructure").
+5. **Tagging**: Supplementary tags were added to support cross-cutting searches (e.g., testing, findability).
+6. **Redundancy Checks**: Indicators that duplicated concepts — even across supergroups — were identified and removed or merged.
 
-Lists can be added with:
+## 3. Challenges
 
-1. Item 1
-2. Item 2
+- **Volume and Overlap**: 303 indicators were initially gathered. Redundancies and overlaps were frequent.
+- **Granularity**: Indicators varied significantly in scope — some were fine-grained metrics, others broad statements.
+- **AI Support**: Attempts to use AI to identify redundancies failed. Human curation proved essential.
+- **Knowledge Gaps**: The team had to consult documentation and resources in unfamiliar areas.
+- **Feasibility Gaps**: Few sources provided tools or metrics to measure the indicators directly.
+- **Ambiguity**: Some indicators required a "keep if applicable" classification, reflecting contextual relevance.
 
-# Citation Typing Ontology annotation
+## 4. Results
 
-You can use [CiTO](http://purl.org/spar/cito/2018-02-12) annotations, as explained in [this BioHackathon Europe 2021 write up](https://raw.githubusercontent.com/biohackrxiv/bhxiv-metadata/main/doc/elixir_biohackathon2021/paper.md) and [this CiTO Pilot](https://www.biomedcentral.com/collections/cito).
-Using this template, you can cite an article and indicate _why_ you cite that article, for instance DisGeNET-RDF [@citesAsAuthority:Queralt2016].
+The outcome is a structured spreadsheet available at [Zenodo DOI: 10.5281/zenodo.14834245](https://doi.org/10.5281/zenodo.14834245), containing:
+- A cleaned and annotated list of quality indicators.
+- Classification into supergroups and assignment of tags.
+- Notes on source, feasibility, and rationale for inclusion or exclusion.
+- Internal identifiers (e.g., `Se1`) for reference consistency.
 
-The syntax in Markdown is as follows: a single intention annotation looks like
-`[@usesMethodIn:Krewinkel2017]`; two or more intentions are separated
-with colons, like `[@extends:discusses:Nielsen2017Scholia]`. When you cite two
-different articles, you use this syntax: `[@citesAsDataSource:Ammar2022ETL; @citesAsDataSource:Arend2022BioHackEU22]`.
+### Supergroups
 
-Possible CiTO typing annotation include:
+Defined based on expert intuition and biohackathon discussions:
+- Examples: Documentation, Sustainability, Accessibility, Usability, Licensing, Security, Testing, etc.
 
-* citesAsDataSource: when you point the reader to a source of data which may explain a claim
-* usesDataFrom: when you reuse somehow (and elaborate on) the data in the cited entity
-* usesMethodIn
-* citesAsAuthority
-* citesAsEvidence
-* citesAsPotentialSolution
-* citesAsRecommendedReading
-* citesAsRelated
-* citesAsSourceDocument
-* citesForInformation
-* confirms
-* documents
-* providesDataFor
-* obtainsSupportFrom
-* discusses
-* extends
-* agreesWith
-* disagreesWith
-* updates
-* citation: generic citation
+### Indicator Structure
 
+Each indicator entry includes:
+- Name and description
+- Source document
+- Target (software, service, etc.)
+- Implementation feasibility
+- Action (keep, maybe, discard)
+- Tags and rationale
 
-# Results
+### Limitations
 
+- Reusability is not a standalone supergroup (though it is partially captured in other areas).
+- No prioritization or scoring is offered — left to downstream users.
+- Green computing indicators (e.g., energy efficiency) are not included.
 
-# Discussion
+## 5. Future Work
 
-...
+- Merge overlapping supergroups or unify tags and dimensions.
+- Recombine all indicators into a single sheet for further redundancy detection.
+- Link the indicators to tools or automation frameworks (where possible).
+- Explore use-case specific adaptations (e.g., for FAIRness, security, or sustainability audits).
 
-## Acknowledgements
+## 6. Acknowledgments
 
-...
+This work was initiated at BioHackathon 2025 (Project 5) and supported by members of the EVERSE WP3 and ELIXIR Tools Platform communities.
 
-## References
+**Contributors (alphabetical):**  
+Eva Martin del Pico, Fotis Psomopoulos, Laura Portell Silva, Renato Alves, Sébastien Moretti, Shoaib Sufi, Adel Kamel Eddine Bouhraoua, David Steinberg, Gavin Farrell, Maria Tsontaki, Rafael Andrade Buono, Sebastian Beier, Daniel Garijo, José María Fernández, Mariia Steeghs-Turchina, Mihail Anton, Marcus Palmblad.
