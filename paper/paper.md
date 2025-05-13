@@ -302,6 +302,3 @@ Each indicator entry includes:
 ## 6. Acknowledgments
 
 This work was initiated at BioHackathon Europe 2025 (Project 5) and further developed in collaboration with members of the EVERSE WP3 and the broader ELIXIR community. We thank the organizers and participants of the BioHackathon for providing a productive and collaborative environment.
-
-**Contributors (alphabetical):**  
-Eva Martin del Pico, Fotis Psomopoulos, Laura Portell Silva, Renato Alves, Sébastien Moretti, Shoaib Sufi, Adel Kamel Eddine Bouhraoua, David Steinberg, Gavin Farrell, Maria Tsontaki, Rafael Andrade Buono, Sebastian Beier, Daniel Garijo, José María Fernández, Mariia Steeghs-Turchina, Mihail Anton, Marcus Palmblad.
