@@ -243,7 +243,7 @@ The outcome is a structured spreadsheet available at [Zenodo DOI: 10.5281/zenodo
 - Internal identifiers (e.g., `Se1`) for reference consistency.
 
 ![Example of curated indicators in the ‘Community’ supergroup, showing classification across data sources, targets, implementation feasibility, and actions.](./figure1.png) 
-**Figure 1**: Example of curated indicators in the ‘Community’ supergroup, showing classification across data sources, targets, implementation feasibility, and actions.
+{\small *Figure 1. Example of curated indicators in the ‘Community’ supergroup, with classification across targets, feasibility, and actions.*} 
 
 ### Supergroups
 
@@ -269,14 +269,6 @@ Each indicator entry includes:
 - Reusability is not a standalone supergroup (though it is partially captured in other areas).
 - No prioritization or scoring is offered — left to downstream users.
 - Green computing indicators (e.g., energy efficiency) are not included.
-
-
-## 5. Future Work
-
-- Merge overlapping supergroups or unify tags and dimensions.
-- Recombine all indicators into a single sheet for further redundancy detection.
-- Link the indicators to tools or automation frameworks (where possible).
-- Explore use-case specific adaptations (e.g., for FAIRness, security, or sustainability audits).
 
 
 ## 6. Acknowledgments
