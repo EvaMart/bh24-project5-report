@@ -172,7 +172,7 @@ The resulting catalogue is designed to:
 - Reveal gaps in community-specific practices or support tools.
 - Offer a foundation for adopting common indicators across different scientific domains.
 
-Through this work, we aim to support a shared vocabulary around software quality, enable meaningful comparisons across tools and frameworks, and facilitate a more coherent ecosystem for sustainable, trustworthy research software.
+Through this work, we aimed to support a shared vocabulary around software quality, enable meaningful comparisons across tools and frameworks, and facilitate a more coherent ecosystem for sustainable, trustworthy research software.
 
 
 
@@ -224,8 +224,6 @@ Several sources were not included due to either duplication, minimal added value
 
 
 ### 2.3 Workflow
-
-The work was initiated at BioHackathon 2025 (Project 5) and refined through a collaborative review process:
 
 The work was initiated at BioHackathon Europe 2025 (Project 5) and refined through a collaborative review process:
 
@@ -288,8 +286,6 @@ Each indicator entry includes:
 - Action (keep, maybe, discard)
 - Tags and rationale
 
-
-### Limitations
 
 ### Limitations
 
