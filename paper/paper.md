@@ -180,10 +180,10 @@ Through this work, we aimed to support a shared vocabulary around software quali
 
 Research software plays a vital role in modern scientific work, and assessing its quality is essential for reproducibility, sustainability, and trust. The goal of this project was to create a curated, non-redundant set of indicators that are relevant, feasible to implement, and applicable to the assessment of research software best practices.
 
-Specifically, we aimed to:
+Our objectives were to:
 
 - Gather indicators from established resources.
-- Remove indicators that are out of scope, overly philosophical, or redundant.
+- Remove indicators that are out of scope, redundant, or overly philosophical (too abstract for practical use).
 - Assign supergroups and tags to support practical use.
 - Produce a usable spreadsheet of indicators annotated with implementation guidance and decisions.
 
@@ -238,7 +238,7 @@ The work was initiated at BioHackathon Europe 2025 (Project 5) and refined throu
    - **Implementation Feasibility**: We assessed how easily a person (rather than a machine) could evaluate whether the indicator was being met. This was not a measure of compliance quality, but of assessability.
    - **Action Decision**: We assigned an action:
      - **Keep**: The indicator was considered relevant and feasible.
-     - **Maybe**: The indicator’s value was uncertain or context-dependent.
+     - **Maybe**: The value of the indicator was uncertain or context-dependent.
      - **Discard**: The indicator was redundant, too vague, or philosophical (e.g., "immutable infrastructure").
 
    - **Tagging**: We also added supplementary tags to help identify indicators relevant to cross-cutting themes such as testing, findability, or community practices.
