@@ -6,6 +6,9 @@ tags:
   - research software
   - software quality
   - software assessment
+  - research software quality
+  - quality indicators
+  - quality dimensions
 
 authors:
 
