@@ -163,7 +163,7 @@ authors_short: Eva Martin del Pico \emph{et al.}
 
 ## 1. Introduction
 
-The primary goal of this project is to perform a comprehensive cross-walk of existing indicators related to research software quality, resulting in a curated catalogue that reflects shared understanding and practical usability. This work was carried out as part of BioHackathon Europe 2025 (Project 5), with a focus on supporting the ELIXIR Research Software Ecosystem while aiming for applicability across the broader Life Sciences community.
+The primary goal of this project is to perform a comprehensive extraction,categorisation and recommendations of existing indicators related to research software quality, resulting in a curated catalogue that reflects shared understanding and practical usability. This work was carried out as part of BioHackathon Europe 2025 (Project 5), with a focus on supporting the ELIXIR Research Software Ecosystem while aiming for applicability across the broader Life Sciences community.
 
 Assessing the quality of research software remains a recognized challenge, with significant variability in the maturity and adoption of indicators across domains. Our goal was to address this by collecting, comparing, and consolidating existing indicators into a structured format, removing redundancy, and highlighting relevance to common use cases in scientific software evaluation.
 
@@ -197,7 +197,8 @@ The final outcome is a structured dataset of quality indicators, accompanied by 
 This resource is intended for:
 
 - Research software developers and maintainers.
-- Funders and evaluators (e.g., EVERSE WP3, RSQKit, STEERS).
+- Projects (e.g., [EVERSE](https://everse.software/), [ELIXIR-STEERS](https://elixir-europe.org/about-us/how-funded/eu-projects/steers))
+- Guides (e.g., [RSQKit](https://everse.software/RSQKit/)) 
 - Anyone seeking to assess research software against quality best practices.
 
 
@@ -238,7 +239,7 @@ The work was initiated at BioHackathon Europe 2025 (Project 5) and refined throu
    For each indicator, three types of review were carried out in parallel:
 
    - **Target**: We classified whether the indicator applied to software, services, governance, or architecture/design.
-   - **Implementation Feasibility**: We assessed how easily a person (rather than a machine) could evaluate whether the indicator was being met. This was not a measure of compliance quality, but of assessability.
+   - **Implementation Feasibility**: We assessed how easily a person (rather than a machine) could evaluate whether the indicator was being met. This was not a measure of how well a particular indicator was implemented but of how easy it was to assess whether this indicator was being met, e.g. it was not a measure of how fit for purpose an open license was but a measure of whether it was easy to acertain that there was an open license in place.
    - **Action Decision**: We assigned an action:
      - **Keep**: The indicator was considered relevant and feasible.
      - **Maybe**: The value of the indicator was uncertain or context-dependent.
@@ -247,7 +248,7 @@ The work was initiated at BioHackathon Europe 2025 (Project 5) and refined throu
    - **Tagging**: We also added supplementary tags to help identify indicators relevant to cross-cutting themes such as testing, findability, or community practices.
    - **Redundancy Checks**: We identified indicators that duplicated the intent or content of others — whether within the same supergroup or across different ones — and marked them as redundant. These were either discarded or annotated in the comments for transparency, especially when an alternative indicator was preferred.
 
-4. **Definition Verification**: During the BioHackathon, some indicator descriptions were manually shortened in the spreadsheet to facilitate the review process. As a final step, these descriptions were cross-checked against their original sources. If a shortened version had been used, it was replaced with the literal wording from the source whenever available, to ensure fidelity to the original intent in the final output.
+4. **Definition Verification**: During the BioHackathon, some indicator descriptions were manually shortened in the spreadsheet to facilitate the review process. As a final step, these descriptions were cross-checked against their original sources. If a shortened version had been used, it was replaced with the literal wording from the source whenever available, to ensure fidelity to the original text.
 
 
 ## 3. Challenges
@@ -276,18 +277,40 @@ An excerpt of the spreadsheet is shown in **Figure 1**, illustrating how indicat
 
 ### Supergroups
 
-To structure the catalogue, indicators were grouped into a set of thematic supergroups. These were defined based on expert intuition and discussions during the BioHackathon, reflecting key dimensions of research software quality. Examples of supergroups include Documentation, Security, Usability, Sustainability, and Licensing. A small number of indicators that lacked sufficient description or were not clearly applicable to research software were excluded and labeled as "uncategorised."
+To structure the catalogue, indicators were grouped into a set of thematic supergroups. These were defined based on expert intuition and discussions during the BioHackathon, reflecting key dimensions of research software quality. Examples of supergroups include Documentation, Security, Usability, Sustainability, and Licensing. A small number of indicators that lacked sufficient description or were not clearly applicable to research software were excluded and labeled as "X - uncategorised."
 
 ### Indicator Structure
 
 Each indicator entry includes:
 
-- Name and description
-- Source document
-- Target (software, service, etc.)
-- Implementation feasibility
-- Action (keep, maybe, discard)
-- Tags and rationale
+- identifier
+    - An internal identifier comprising of a shortened version of the Supergroup name and a number (this is internal added to allow us to reference other identifiers in case there are duplicates or for other reasons) - this also allow sorting of the Supergroup tabs without damaging reference to other rows
+- Supergroup
+    - Supergroups are a named cluster of indicators on a particular topic (at the time of writing these are: Sustainability, Interoperability, Documentation, Accessibility, Fundability, Community, Security, Usability, Findability, Contribution, Issue tracking)
+- Tags	
+    - These are other Supergroups or areas which this indicator also applies to
+- Data type
+    - This is the name of the indicator
+- Data property	
+    - These are the types of values the indicator can take
+- Short description 
+    - This is the description of the indicator - this is meant to be verbatim from the 'Document/resource it's capured' from
+- Document/resource it's captured 
+    - The reference document/resource for the definition of the indicator
+- Community it's used	
+    - This is an attempt to capture which communities this indicator tends to be used in
+- Person who added this	
+    - This is the name of the person who captured this indicators - the original extractoin occured during the BioHackathon 2024
+- Service/tool that provides this 
+    - This is the name of a tool or tools that can help you ascertain this indicator 
+- Target
+    - This is what the indicator (aka Data type) applies to (at the time of writing this covers - software, service, governance, service & software)
+- Implementation 
+    - What is the level of difficulty in acertaining the value of this indicator for a given software/service/project (not if it an easy technique to apply but if it's easy to assess whether this is being done)
+- Action	
+    - Whether the BioHackathon25 Project 5 + ELIXIR Tools Platform WP3 (Software Best Practices) folk have said if this indicator should be kept, maybe kept or discarded when assessing software/services/projects - discard's mainly focus on duplicates and where indicators are more philosophical than widely recognised 
+- Comments
+    - The reasons and thoughts around why a particular 'Action' was recommended
 
 
 ### Limitations
@@ -296,7 +319,7 @@ Each indicator entry includes:
 
 - **No prioritization or scoring is offered**: The catalogue presents indicators in a neutral and unranked format. This decision was intentional, as relevance and importance can vary significantly across projects, domains, and assessment goals. Users are encouraged to apply their own prioritization schemes depending on context (e.g., compliance, funding, onboarding, sustainability audits).
 
-- **Green computing indicators (e.g., energy efficiency) are not included**: Despite the growing importance of sustainable computing, metrics related to energy consumption, carbon footprint, or other ecological impacts were not included in this iteration. This was due to the lack of actionable indicators in the reviewed sources.
+- **Green computing indicators (e.g., energy efficiency) are not included**: Despite the growing importance of sustainable computing, metrics related to energy consumption, carbon footprint, or other ecological impacts were not included in this iteration. This was due to the lack of indicators in the reviewed sources pertaining to green computing.
 
 ## 6. Acknowledgments
 
