@@ -1,5 +1,5 @@
 ---
-title: 'Curating Software Quality Indicators for Research Software'
+title: 'Software Quality Indicators: extraction, categorisation and recommendations from canonical sources'
 title_short: 'Software Quality Indicators'
 tags:
 
