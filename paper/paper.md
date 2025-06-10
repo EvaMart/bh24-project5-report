@@ -1,6 +1,6 @@
 ---
-title: 'BioHackEU25 report: Curating Software Quality Indicators for Research Software'
-title_short: 'BioHackEU25: Software Quality Indicators'
+title: 'Curating Software Quality Indicators for Research Software'
+title_short: 'Software Quality Indicators'
 tags:
 
   - research software
@@ -45,7 +45,7 @@ authors:
   - name: Adel Kamel Eddine Bouhraoua
 
     affiliation: 6
-    orcid: 000-0001-9531-6339
+    orcid: 0000-0001-9531-6339
 
   - name: David Steinberg
 
@@ -159,7 +159,6 @@ group: Project 5
 git_url: https://github.com/EVERSE-ResearchSoftware/software-quality-indicators
 authors_short: Eva Martin del Pico \emph{et al.}
 ---
-# Curating Software Quality Indicators for Research Software
 
 ## 1. Introduction
 
