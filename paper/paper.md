@@ -152,17 +152,26 @@ affiliations:
 date: 13 May 2025
 cito-bibliography: paper.bib
 event: BH25EU
-biohackathon_name: "BioHackathon Europe 2025"
+biohackathon_name: "BioHackathon Europe 2024"
 biohackathon_url:   "https://biohackathon-europe.org/"
-biohackathon_location: "Barcelona, Spain, 2025"
+biohackathon_location: "Barcelona, Spain, 2024"
 group: Project 5
 git_url: https://github.com/EVERSE-ResearchSoftware/software-quality-indicators
 authors_short: Eva Martin del Pico \emph{et al.}
 ---
 
+## Abstract 
+
+Research software plays a central role in modern science, and its quality is increasingly recognized as essential for reproducibility, sustainability, and trust. Numerous initiatives have proposed indicators to guide quality assessment, yet these indicators are dispersed across domains and vary in scope, terminology, and practical use. This work presents a curated catalogue of software quality indicators tailored to the needs of research software. Developed during BioHackathon Europe 2024 and refined in collaboration with the ELIXIR Tools Platform and EVERSE project, the catalogue consolidates and structures indicators from a range of authoritative sources.
+
+Over 300 indicators were gathered and systematically reviewed for relevance, clarity, and implementation feasibility. Each was classified into thematic categories—such as Documentation, Security, Usability, and Sustainability—and annotated with target applicability, ease of evaluation, and recommended actions. Redundant, overly abstract, or narrowly scoped indicators were excluded or flagged, while additional tags highlighted cross-cutting concerns such as licensing, testing, and community practices.
+
+The resulting open dataset, available as a structured spreadsheet, includes detailed metadata and decision criteria to support reuse, adaptation, and extension. The catalogue offers a foundation for context-specific assessment frameworks. Intended users include research software developers and maintainers, evaluators, and developers of quality-focused tools and guidelines.
+
+
 ## 1. Introduction
 
-The primary goal of this project is to perform a comprehensive extraction,categorization and recommendations of existing indicators related to research software quality, resulting in a curated catalogue that reflects shared understanding and practical usability. This work was carried out as part of BioHackathon Europe 2025 (Project 5), with a focus on supporting the ELIXIR Research Software Ecosystem while aiming for applicability across the broader Life Sciences community.
+The primary goal of this project is to perform a comprehensive extraction,categorization and recommendations of existing indicators related to research software quality, resulting in a curated catalogue that reflects shared understanding and practical usability. This work was carried out as part of BioHackathon Europe 2024 (Project 5), with a focus on supporting the ELIXIR Research Software Ecosystem while aiming for applicability across the broader Life Sciences community.
 
 Assessing the quality of research software remains a recognized challenge, with significant variability in the maturity and adoption of indicators across domains. Our goal was to address this by collecting, comparing, and consolidating existing indicators into a structured format, removing redundancy, and highlighting relevance to common use cases in scientific software evaluation.
 
@@ -228,7 +237,7 @@ Several sources were not included due to either duplication, minimal added value
 
 ### 2.3 Workflow
 
-The work was initiated at BioHackathon Europe 2025 (Project 5) and refined through a collaborative review process:
+The work was initiated at BioHackathon Europe 2024 (Project 5) and refined through a collaborative review process:
 
 1. **Collection**: Over 300 indicators were gathered from selected sources.
 
@@ -322,4 +331,4 @@ Each indicator entry includes:
 
 ## 6. Acknowledgments
 
-This work was initiated at BioHackathon Europe 2025 (Project 5) and further developed in collaboration with members of the EVERSE WP3 and the broader ELIXIR community. We thank the organizers and participants of the BioHackathon for providing a productive and collaborative environment.
+This work was initiated at BioHackathon Europe 2024 (Project 5) and further developed in collaboration with members of the EVERSE WP3 and the broader ELIXIR community. We thank the organizers and participants of the BioHackathon for providing a productive and collaborative environment.
