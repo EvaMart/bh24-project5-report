@@ -162,7 +162,7 @@ authors_short: Eva Martin del Pico \emph{et al.}
 
 ## Abstract 
 
-Research software plays a central role in modern science, and its quality is increasingly recognized as essential for reproducibility, sustainability, and trust. Numerous initiatives have proposed indicators to guide quality assessment, yet these indicators are dispersed across domains and vary in scope, terminology, and practical use. This work presents a curated catalogue of software quality indicators tailored to the needs of research software. Developed during BioHackathon Europe 2024 and refined in collaboration with the ELIXIR Tools Platform and EVERSE project, the catalogue consolidates and structures indicators from a range of authoritative sources.
+Research software plays a central role in modern science, and its quality is increasingly recognized as essential for reproducibility, sustainability, and trust. Numerous initiatives have proposed indicators to guide quality assessment, yet these indicators are dispersed across domains and vary in scope, terminology, and practical use. This work presents a curated catalogue of software quality indicators tailored to the needs of research software. Developed during [BioHackathon Europe](https://biohackathon-europe.org) 2024 and refined in collaboration with the [ELIXIR Tools Platform](https://elixir-europe.org/platforms/tools) and [EVERSE project](https://everse.software), the catalogue consolidates and structures indicators from a range of authoritative sources.
 
 Over 300 indicators were gathered and systematically reviewed for relevance, clarity, and implementation feasibility. Each was classified into thematic categories—such as Documentation, Security, Usability, and Sustainability—and annotated with target applicability, ease of evaluation, and recommended actions. Redundant, overly abstract, or narrowly scoped indicators were excluded or flagged, while additional tags highlighted cross-cutting concerns such as licensing, testing, and community practices.
 
@@ -237,7 +237,7 @@ Several sources were not included due to either duplication, minimal added value
 
 ### 2.3 Workflow
 
-The work was initiated at BioHackathon Europe 2024 (Project 5) and refined through a collaborative review process:
+The work was initiated at [BioHackathon Europe 2024 (Project 5)](https://github.com/elixir-europe/biohackathon-projects-2024/blob/main/5.md) and refined through a collaborative review process:
 
 1. **Collection**: Over 300 indicators were gathered from selected sources.
 
@@ -271,7 +271,7 @@ The work was initiated at BioHackathon Europe 2024 (Project 5) and refined throu
 
 ## 4. Results
 
-The outcome is a structured spreadsheet available at [Zenodo DOI: 10.5281/zenodo.14834245](https://doi.org/10.5281/zenodo.14834245), containing:
+The outcome is a structured spreadsheet available at the following [Zenodo DOI: 10.5281/zenodo.14834245](https://doi.org/10.5281/zenodo.14834245), containing:
 
 - A cleaned and annotated list of quality indicators.
 - Classification into supergroups and assignment of tags.
@@ -291,7 +291,7 @@ To structure the catalogue, indicators were grouped into a set of thematic super
 
 Each indicator entry includes:
 
-- identifier
+- Identifier
     - An internal identifier comprising of a shortened version of the Supergroup name and a number (this is internal added to allow us to reference other identifiers in case there are duplicates or for other reasons) - this also allow sorting of the Supergroup tabs without damaging reference to other rows
 - Supergroup
     - Supergroups are a named cluster of indicators on a particular topic (at the time of writing these are: Sustainability, Interoperability, Documentation, Accessibility, Fundability, Community, Security, Usability, Findability, Contribution, Issue tracking)
